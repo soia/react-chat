@@ -1,6 +1,7 @@
 import React from 'react';
 import { withStyles } from '@material-ui/core/styles';
 import TextField from '@material-ui/core/TextField';
+import search from './Search.module.scss';
 
 const styles = theme => ({
   container: {
@@ -22,13 +23,6 @@ const styles = theme => ({
 
 class TextFields extends React.Component {
 
-
-  handleChange = name => event => {
-    this.setState({
-      [name]: event.target.value,
-    });
-  };
-
   render() {
     const { classes } = this.props;
 
@@ -41,6 +35,9 @@ class TextFields extends React.Component {
           className={classes.textField}
           margin="normal"
         />
+        <div className={search.container}> <p>dsgfdgerghteh</p>
+        <p className={search.container__children}>fdsgtehrth</p>
+        </div>
       </form>
     );
   }

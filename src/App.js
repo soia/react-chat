@@ -4,7 +4,7 @@ import Drawer from "@material-ui/core/Drawer";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
-import Search from './Components/Search';
+import Search from './Components/Search-input/Search';
 
 const styles = theme => ({
     root: {
@@ -13,7 +13,7 @@ const styles = theme => ({
     appBar: {
         width: `calc(100% - 320px)`,
         marginLeft: 320,
-    
+
     },
     drawer: {
         width: 320,
@@ -46,7 +46,7 @@ function PermanentDrawerLeft(props) {
             <Drawer
                 className={classes.drawer}
                 variant="permanent"
-                classes={{paper: classes.drawerPaper}}
+                classes={{ paper: classes.drawerPaper }}
             >
 
                 <Search />
